@@ -22,7 +22,9 @@
 
 .container {
 	min-height: 100dvh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+}
+
+.logo {
+	margin: 0 auto;
+	padding-top: 3.125rem;
 }

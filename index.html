@@ -10,7 +10,72 @@
 		<title>Frontend Mentor | Tip calculator app</title>
 	</head>
 	<body>
-		Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount / person Total / person Reset
+		<header>
+			<h1 class="sr-only">Splitter</h1>
+			<img src="./images/logo.svg" alt="Bill Splitter app logo" class="logo" />
+		</header>
+		<main>
+			<div class="container">
+				<section class="calculator">
+					<div class="calculator__bill">
+						<div class="calculator__bill-priceInput">
+							<label for="bill">Bill</label>
+							<input type="number" id="bill" />
+						</div>
+
+						<div class="calculator__bill-tipOptions">
+							<h2>Select Tip %</h2>
+
+							<ul>
+								<li>
+									<button>5%</button>
+								</li>
+								<li>
+									<button>10%</button>
+								</li>
+								<li>
+									<button>15%</button>
+								</li>
+								<li>
+									<button>25%</button>
+								</li>
+								<li>
+									<button>50%</button>
+								</li>
+								<li>
+									<button>Custom</button>
+								</li>
+							</ul>
+						</div>
+
+						<div class="calculator__bill-people">
+							<label for="billPeople">Number of People</label>
+							<input type="number" id="billPeople" />
+						</div>
+					</div>
+
+					<div class="calculator__results">
+						<div class="calculator__results-amount">
+							<div>
+								<h3>Tip Amount</h3>
+								<span>/ person</span>
+							</div>
+
+							<strong>$0.00</strong>
+						</div>
+						<div class="calculator__results-total">
+							<div>
+								<h3>Total</h3>
+								<span>/ person</span>
+							</div>
+
+							<strong>$0.00</strong>
+						</div>
+						<button type="button">reset</button>
+					</div>
+				</section>
+			</div>
+		</main>
 
 		<footer>
 			<p>
