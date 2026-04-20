@@ -1,1 +1,65 @@
 @use '../abstracts' as *;
+
+.formInput {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+
+	&.error {
+		div {
+			span {
+				display: block;
+			}
+		}
+
+		input {
+			&:focus {
+				outline: none;
+			}
+
+			border: 2px solid hsl(13, 70%, 60%);
+		}
+	}
+
+	div {
+		display: flex;
+		justify-content: space-between;
+		@include apply-text-style(text-preset5);
+
+		label {
+			color: $color-grey-500;
+		}
+
+		span {
+			display: none;
+			color: hsl(13, 70%, 60%);
+		}
+	}
+
+	input {
+		font-family: 'Space Mono', monospace;
+		border: none;
+		border-radius: 0.313rem;
+		background: $color-grey-50 no-repeat 1rem;
+		padding: 0.5rem 1rem;
+		text-align: right;
+		@include apply-text-style(text-preset3);
+		color: $color-green-900;
+
+		&:focus {
+			outline: 2px solid $color-green-400;
+		}
+
+		&::placeholder {
+			color: hsl(184, 19%, 68%);
+		}
+	}
+
+	#bill {
+		background-image: url('../images/icon-dollar.svg');
+	}
+
+	#billPeople {
+		background-image: url('../images/icon-person.svg');
+	}
+}

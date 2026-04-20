@@ -72,6 +72,64 @@ main {
   padding-top: 3.125rem;
 }
 
+.formInput {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.formInput.error div span {
+  display: block;
+}
+.formInput.error input:focus {
+  outline: none;
+}
+.formInput.error input {
+  border: 2px solid hsl(13, 70%, 60%);
+}
+.formInput div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+}
+.formInput div label {
+  color: hsl(186, 14%, 43%);
+}
+.formInput div span {
+  display: none;
+  color: hsl(13, 70%, 60%);
+}
+.formInput input {
+  font-family: "Space Mono", monospace;
+  border: none;
+  border-radius: 0.313rem;
+  background: hsl(189, 47%, 97%) no-repeat 1rem;
+  padding: 0.5rem 1rem;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: 0;
+  color: hsl(183, 100%, 15%);
+}
+.formInput input:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+.formInput input::-moz-placeholder {
+  color: hsl(184, 19%, 68%);
+}
+.formInput input::placeholder {
+  color: hsl(184, 19%, 68%);
+}
+.formInput #bill {
+  background-image: url("../images/icon-dollar.svg");
+}
+.formInput #billPeople {
+  background-image: url("../images/icon-person.svg");
+}
+
 .calculator {
   background: white;
   min-height: 100dvh;
@@ -86,4 +144,17 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+.calculator__bill-tipOptions h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  color: hsl(186, 14%, 43%);
+  margin-bottom: 0.5rem;
+}
+.calculator__bill-tipOptions ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
