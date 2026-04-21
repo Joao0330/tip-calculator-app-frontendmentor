@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+footer {
+	max-width: 75rem; //1200px
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	text-align: center;
+
+	a {
+		color: $color-green-900;
+	}
+}

@@ -63,6 +63,14 @@ main {
 .container {
   min-height: 100dvh;
 }
+@media (min-width: 48rem) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem 5rem;
+  }
+}
 
 .logo {
   margin: 0 auto;
@@ -114,6 +122,54 @@ main {
 }
 .resetButton:disabled {
   background: hsl(183, 79%, 24%);
+}
+
+.resultsCard {
+  background: hsl(183, 100%, 15%);
+  border-radius: 0.938rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.resultsCard__top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.resultsCard__top > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resultsCard__top > div h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  color: white;
+}
+.resultsCard__top > div span {
+  font-size: 0.813rem;
+  font-weight: 700;
+  line-height: 1.188rem;
+  letter-spacing: 0;
+  color: hsl(184, 14%, 56%);
+}
+.resultsCard__top > div strong {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.938rem;
+  letter-spacing: -0.042rem;
+  color: hsl(172, 67%, 45%);
+}
+@media (min-width: 48rem) {
+  .resultsCard__top > div strong {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4.438rem;
+    letter-spacing: -0.063rem;
+  }
 }
 
 .formInput {
@@ -184,10 +240,22 @@ main {
   flex-direction: column;
   gap: 2rem;
 }
+@media (min-width: 48rem) {
+  .calculator {
+    padding: 3rem 5rem;
+    border-radius: 1.563rem;
+    gap: 2.5rem;
+  }
+}
 .calculator__bill {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+@media (min-width: 48rem) {
+  .calculator__bill {
+    gap: 1.5rem;
+  }
 }
 .calculator__bill-tipOptions h2 {
   font-size: 1rem;
@@ -201,6 +269,11 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+}
+@media (min-width: 48rem) {
+  .calculator__bill-tipOptions ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .calculator__bill-tipOptions ul #customTip {
   width: 100%;
@@ -225,42 +298,13 @@ main {
 .calculator__bill-tipOptions ul #customTip::placeholder {
   color: hsl(180, 18%, 40%);
 }
-.calculator__results {
-  background: hsl(183, 100%, 15%);
-  border-radius: 0.938rem;
-  padding: 1.5rem 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+
+footer {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
 }
-.calculator__results-top {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-.calculator__results-top > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.calculator__results-top > div h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  letter-spacing: 0;
-  color: white;
-}
-.calculator__results-top > div span {
-  font-size: 0.813rem;
-  font-weight: 700;
-  line-height: 1.188rem;
-  letter-spacing: 0;
-  color: hsl(184, 14%, 56%);
-}
-.calculator__results-top > div strong {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 2.938rem;
-  letter-spacing: -0.042rem;
-  color: hsl(172, 67%, 45%);
+footer a {
+  color: hsl(183, 100%, 15%);
 }
