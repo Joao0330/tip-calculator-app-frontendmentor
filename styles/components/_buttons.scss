@@ -22,3 +22,25 @@
 		}
 	}
 }
+
+.resetButton {
+	background: $color-green-400;
+	color: $color-green-900;
+	border: none;
+	@include apply-text-style(text-preset4);
+	padding: 0.5rem 0;
+	border-radius: 0.313rem;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	@include breakpointMobile(80rem) {
+		&:hover {
+			background: hsl(173, 61%, 77%);
+		}
+	}
+
+	&:disabled {
+		background: hsl(183, 79%, 24%);
+	}
+}

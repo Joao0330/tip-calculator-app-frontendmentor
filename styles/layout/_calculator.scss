@@ -49,4 +49,40 @@
 			}
 		}
 	}
+
+	&__results {
+		background: $color-green-900;
+		border-radius: 0.938rem;
+		padding: 1.5rem 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+
+		&-top {
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+
+			> div {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				h3 {
+					@include apply-text-style(text-preset5);
+					color: white;
+				}
+
+				span {
+					@include apply-text-style(text-preset6);
+					color: $color-grey-400;
+				}
+
+				strong {
+					@include apply-text-style(text-preset2);
+					color: $color-green-400;
+				}
+			}
+		}
+	}
 }
