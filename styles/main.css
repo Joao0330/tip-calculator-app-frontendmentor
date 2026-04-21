@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-/* @include breakpointMobile(991px) {
-    width: 100%;
-} */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -70,6 +67,30 @@ main {
 .logo {
   margin: 0 auto;
   padding-top: 3.125rem;
+}
+
+.tipButton {
+  background: hsl(183, 100%, 15%);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.313rem;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+.tipButton.selected {
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+@media (min-width: 80rem) {
+  .tipButton:hover {
+    background: hsl(173, 61%, 77%);
+    color: hsl(183, 100%, 15%);
+  }
 }
 
 .formInput {
@@ -157,4 +178,27 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+}
+.calculator__bill-tipOptions ul #customTip {
+  width: 100%;
+  border: none;
+  font-family: "Space Mono", monospace;
+  border-radius: 0.313rem;
+  color: hsl(183, 100%, 15%);
+  padding: 0.5rem 1rem;
+  background: hsl(189, 47%, 97%) no-repeat 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: 0;
+}
+.calculator__bill-tipOptions ul #customTip:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+.calculator__bill-tipOptions ul #customTip::-moz-placeholder {
+  color: hsl(180, 18%, 40%);
+}
+.calculator__bill-tipOptions ul #customTip::placeholder {
+  color: hsl(180, 18%, 40%);
 }

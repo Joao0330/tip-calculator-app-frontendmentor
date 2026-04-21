@@ -1,1 +1,24 @@
 @use '../abstracts' as *;
+
+.tipButton {
+	background: $color-green-900;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 0.313rem;
+	width: 100%;
+	@include apply-text-style(text-preset3);
+	cursor: pointer;
+
+	&.selected {
+		background: $color-green-400;
+		color: $color-green-900;
+	}
+
+	@include breakpointMobile(80rem) {
+		&:hover {
+			background: hsl(173, 61%, 77%);
+			color: $color-green-900;
+		}
+	}
+}
