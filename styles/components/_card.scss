@@ -8,6 +8,12 @@
 	flex-direction: column;
 	gap: 2rem;
 
+	@include breakpointMobile(80rem) {
+		width: 50%;
+		gap: 8rem;
+		padding: 2.344rem 2.5rem;
+	}
+
 	&__top {
 		display: flex;
 		flex-direction: column;

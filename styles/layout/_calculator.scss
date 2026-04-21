@@ -11,9 +11,19 @@
 	gap: 2rem;
 
 	@include breakpointMobile(48rem) {
+		min-height: auto;
 		padding: 3rem 5rem;
 		border-radius: 1.563rem;
 		gap: 2.5rem;
+	}
+
+	@include breakpointMobile(80rem) {
+		flex-direction: row;
+		align-items: center;
+		gap: 3rem;
+		padding: 2rem;
+		max-width: 57.5rem;
+		margin: 5rem auto;
 	}
 
 	&__bill {
@@ -23,6 +33,11 @@
 
 		@include breakpointMobile(48rem) {
 			gap: 1.5rem;
+		}
+
+		@include breakpointMobile(80rem) {
+			width: 50%;
+			gap: 2.5rem;
 		}
 
 		&-tipOptions {
