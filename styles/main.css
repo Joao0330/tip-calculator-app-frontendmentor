@@ -232,6 +232,11 @@ main {
 .formInput input::placeholder {
   color: hsl(184, 19%, 68%);
 }
+.formInput input::-webkit-outer-spin-button, .formInput input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
 .formInput #bill {
   background-image: url("../images/icon-dollar.svg");
 }
@@ -323,6 +328,11 @@ main {
 }
 .calculator__bill-tipOptions ul #customTip::placeholder {
   color: hsl(180, 18%, 40%);
+}
+.calculator__bill-tipOptions ul #customTip::-webkit-outer-spin-button, .calculator__bill-tipOptions ul #customTip::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 footer {

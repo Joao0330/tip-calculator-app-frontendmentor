@@ -53,6 +53,13 @@
 		&::placeholder {
 			color: hsl(184, 19%, 68%);
 		}
+
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			display: none;
+			-webkit-appearance: none;
+			margin: 0;
+		}
 	}
 
 	#bill {
