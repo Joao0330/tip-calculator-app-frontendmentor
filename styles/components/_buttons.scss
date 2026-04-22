@@ -15,11 +15,9 @@
 		color: $color-green-900;
 	}
 
-	@include breakpointMobile(80rem) {
-		&:hover {
-			background: hsl(173, 61%, 77%);
-			color: $color-green-900;
-		}
+	&:hover {
+		background: hsl(173, 61%, 77%);
+		color: $color-green-900;
 	}
 }
 
@@ -34,10 +32,8 @@
 	text-transform: uppercase;
 	cursor: pointer;
 
-	@include breakpointMobile(80rem) {
-		&:hover {
-			background: hsl(173, 61%, 77%);
-		}
+	&:hover {
+		background: hsl(173, 61%, 77%);
 	}
 
 	&:disabled {

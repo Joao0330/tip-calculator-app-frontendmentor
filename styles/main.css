@@ -47,17 +47,15 @@ main {
 
 .sr-only {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 0.063rem;
   height: 0.063rem;
   padding: 0;
   margin: -0.063rem;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
-  grid-area: none;
 }
 
 .container {
@@ -96,11 +94,9 @@ main {
   background: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
 }
-@media (min-width: 80rem) {
-  .tipButton:hover {
-    background: hsl(173, 61%, 77%);
-    color: hsl(183, 100%, 15%);
-  }
+.tipButton:hover {
+  background: hsl(173, 61%, 77%);
+  color: hsl(183, 100%, 15%);
 }
 
 .resetButton {
@@ -117,10 +113,8 @@ main {
   text-transform: uppercase;
   cursor: pointer;
 }
-@media (min-width: 80rem) {
-  .resetButton:hover {
-    background: hsl(173, 61%, 77%);
-  }
+.resetButton:hover {
+  background: hsl(173, 61%, 77%);
 }
 .resetButton:disabled {
   background: hsl(183, 79%, 24%);

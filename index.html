@@ -24,7 +24,7 @@
 								<label for="bill">Bill</label>
 								<span>Can't be zero</span>
 							</div>
-							<input type="number" id="bill" placeholder="0" />
+							<input type="number" id="bill" placeholder="0" min="1" />
 						</div>
 
 						<div class="calculator__bill-tipOptions">
@@ -32,19 +32,19 @@
 
 							<ul>
 								<li>
-									<button class="tipButton" data-tip="0.05">5%</button>
+									<button type="button" class="tipButton" data-tip="0.05">5%</button>
 								</li>
 								<li>
-									<button class="tipButton" data-tip="0.1">10%</button>
+									<button type="button" class="tipButton" data-tip="0.1">10%</button>
 								</li>
 								<li>
-									<button class="tipButton" data-tip="0.15">15%</button>
+									<button type="button" class="tipButton" data-tip="0.15">15%</button>
 								</li>
 								<li>
-									<button class="tipButton" data-tip="0.25">25%</button>
+									<button type="button" class="tipButton" data-tip="0.25">25%</button>
 								</li>
 								<li>
-									<button class="tipButton" data-tip="0.5">50%</button>
+									<button type="button" class="tipButton" data-tip="0.5">50%</button>
 								</li>
 								<li>
 									<input type="number" placeholder="Custom" id="customTip" />
@@ -57,7 +57,7 @@
 								<label for="billPeople">Number of People</label>
 								<span>Can't be zero</span>
 							</div>
-							<input type="number" id="billPeople" placeholder="0" min="0" />
+							<input type="number" id="billPeople" placeholder="0" min="1" />
 						</div>
 					</div>
 
