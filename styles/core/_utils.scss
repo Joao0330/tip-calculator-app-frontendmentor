@@ -21,7 +21,7 @@
 }
 
 .container {
-	min-height: 100dvh;
+	min-height: 100vh;
 
 	@include breakpointMobile(48rem) {
 		padding: 0 5rem 5rem;
